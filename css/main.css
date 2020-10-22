@@ -1,0 +1,507 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, button {
+  outline: none; }
+
+@font-face {
+  font-family: 'acmeregular-videos';
+  src: url("../fonts/acme-regular-webfont.woff2") format("woff2"), url("../fonts/acme-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'arvoregular-shop';
+  src: url("../fonts/arvo-regular-webfont.woff2") format("woff2"), url("../fonts/arvo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'disposabledroid_bbitalic-roms';
+  src: url("../fonts/disposabledroidbb_ital-webfont.woff2") format("woff2"), url("../fonts/disposabledroidbb_ital-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'disposabledroid_bbregular-roms';
+  src: url("../fonts/disposabledroidbb-webfont.woff2") format("woff2"), url("../fonts/disposabledroidbb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lobster-network';
+  src: url("../fonts/lobster-regular-webfont.woff2") format("woff2"), url("../fonts/lobster-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s; }
+  .home .home-box {
+    position: relative; }
+    .home .home-box .home-box-site_name h2 {
+      font-family: "lobster-network";
+      color: #ddd;
+      font-size: 100px; }
+    .home .home-box .home-box-variation {
+      position: absolute;
+      bottom: 15px;
+      right: 31px;
+      font-size: 25px;
+      color: #ddd; }
+      .home .home-box .home-box-variation h2 {
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s; }
+      .home .home-box .home-box-variation .p_net {
+        position: absolute;
+        opacity: 1;
+        font-family: "lobster-network"; }
+      .home .home-box .home-box-variation .p_shop {
+        position: absolute;
+        opacity: 0;
+        font-family: "arvoregular-shop";
+        font-size: 23px; }
+      .home .home-box .home-box-variation .p_videos {
+        position: absolute;
+        opacity: 0;
+        font-family: "acmeregular-videos"; }
+      .home .home-box .home-box-variation .p_roms {
+        position: absolute;
+        bottom: -30px;
+        opacity: 0;
+        font-family: "disposabledroid_bbregular-roms";
+        font-size: 35px; }
+    .home .home-box .home-box-boxes {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      right: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 267px;
+      margin: 0 auto; }
+      .home .home-box .home-box-boxes .p_shop-box {
+        position: relative;
+        width: 70px;
+        height: 30px;
+        border: 2px solid #ff8a00;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #ff8a00;
+        font-family: "arvoregular-shop";
+        cursor: pointer;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+        .home .home-box .home-box-boxes .p_shop-box h2 {
+          font-size: 15px; }
+      .home .home-box .home-box-boxes .p_videos-box {
+        position: relative;
+        width: 70px;
+        height: 30px;
+        border: 2px solid #004eff;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #004eff;
+        font-family: "acmeregular-videos";
+        cursor: pointer;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .home .home-box .home-box-boxes .p_roms-box {
+        position: relative;
+        width: 70px;
+        height: 30px;
+        border: 2px solid #17a201;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #17a201;
+        font-family: "disposabledroid_bbregular-roms";
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .home .home-box .home-box-boxes h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%); }
+
+.shop-style {
+  background: #ff8a00; }
+  .shop-style .home-box .home-box-variation .p_net {
+    opacity: 0; }
+  .shop-style .home-box .home-box-variation .p_shop {
+    opacity: 1; }
+  .shop-style .home-box .home-box-variation .p_videos {
+    opacity: 0; }
+  .shop-style .home-box .home-box-variation .p_roms {
+    opacity: 0; }
+  .shop-style .home-box .home-box-boxes .p_shop-box {
+    border: 2px solid #ddd;
+    color: #ddd; }
+  .shop-style .home-box .home-box-boxes .p_videos-box {
+    opacity: .2; }
+  .shop-style .home-box .home-box-boxes .p_roms-box {
+    opacity: .3; }
+
+.videos-style {
+  background: #004eff; }
+  .videos-style .home-box .home-box-variation .p_net {
+    opacity: 0; }
+  .videos-style .home-box .home-box-variation .p_shop {
+    opacity: 0; }
+  .videos-style .home-box .home-box-variation .p_videos {
+    opacity: 1; }
+  .videos-style .home-box .home-box-variation .p_roms {
+    opacity: 0; }
+  .videos-style .home-box .home-box-boxes .p_shop-box {
+    opacity: .3; }
+  .videos-style .home-box .home-box-boxes .p_videos-box {
+    border: 2px solid #ddd;
+    color: #ddd; }
+  .videos-style .home-box .home-box-boxes .p_roms-box {
+    opacity: .3; }
+
+.roms-style {
+  background: #17a201; }
+  .roms-style .home-box .home-box-variation .p_net {
+    opacity: 0; }
+  .roms-style .home-box .home-box-variation .p_shop {
+    opacity: 0; }
+  .roms-style .home-box .home-box-variation .p_videos {
+    opacity: 0; }
+  .roms-style .home-box .home-box-variation .p_roms {
+    opacity: 1; }
+  .roms-style .home-box .home-box-boxes .p_shop-box {
+    opacity: .5; }
+  .roms-style .home-box .home-box-boxes .p_videos-box {
+    opacity: .2; }
+  .roms-style .home-box .home-box-boxes .p_roms-box {
+    border: 2px solid #ddd;
+    color: #ddd; }
+
+@-webkit-keyframes crazy1 {
+  0% {
+    color: red;
+    text-shadow: 0 0 10px blue; }
+  10% {
+    color: orange;
+    text-shadow: 0 0 10px cyan; }
+  20% {
+    color: yellow;
+    text-shadow: 0 0 10px pink; }
+  30% {
+    color: green;
+    text-shadow: 0 0 10px violet; }
+  40% {
+    color: blue;
+    text-shadow: 0 0 10px black; }
+  50% {
+    color: cyan;
+    text-shadow: 0 0 10px green; }
+  60% {
+    color: pink;
+    text-shadow: 0 0 10px red; }
+  70% {
+    color: violet;
+    text-shadow: 0 0 10px orange; }
+  80% {
+    color: black;
+    text-shadow: 0 0 10px yellow; }
+  90% {
+    color: green;
+    text-shadow: 0 0 10px green; }
+  100% {
+    color: red;
+    text-shadow: 0 0 10px blue; } }
+
+@keyframes crazy1 {
+  0% {
+    color: red;
+    text-shadow: 0 0 10px blue; }
+  10% {
+    color: orange;
+    text-shadow: 0 0 10px cyan; }
+  20% {
+    color: yellow;
+    text-shadow: 0 0 10px pink; }
+  30% {
+    color: green;
+    text-shadow: 0 0 10px violet; }
+  40% {
+    color: blue;
+    text-shadow: 0 0 10px black; }
+  50% {
+    color: cyan;
+    text-shadow: 0 0 10px green; }
+  60% {
+    color: pink;
+    text-shadow: 0 0 10px red; }
+  70% {
+    color: violet;
+    text-shadow: 0 0 10px orange; }
+  80% {
+    color: black;
+    text-shadow: 0 0 10px yellow; }
+  90% {
+    color: green;
+    text-shadow: 0 0 10px green; }
+  100% {
+    color: red;
+    text-shadow: 0 0 10px blue; } }
+
+@-webkit-keyframes crazy2 {
+  0% {
+    color: red;
+    border: 2px solid red;
+    text-shadow: 0 0 10px blue;
+    -webkit-box-shadow: 0 0 10px blue;
+            box-shadow: 0 0 10px blue; }
+  10% {
+    color: orange;
+    border: 2px solid orange;
+    text-shadow: 0 0 10px cyan;
+    -webkit-box-shadow: 0 0 10px cyan;
+            box-shadow: 0 0 10px cyan; }
+  20% {
+    color: yellow;
+    border: 2px solid yellow;
+    text-shadow: 0 0 10px pink;
+    -webkit-box-shadow: 0 0 10px pink;
+            box-shadow: 0 0 10px pink; }
+  30% {
+    color: green;
+    border: 2px solid green;
+    text-shadow: 0 0 10px violet;
+    -webkit-box-shadow: 0 0 10px violet;
+            box-shadow: 0 0 10px violet; }
+  40% {
+    color: blue;
+    border: 2px solid blue;
+    text-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black; }
+  50% {
+    color: cyan;
+    border: 2px solid cyan;
+    text-shadow: 0 0 10px green;
+    -webkit-box-shadow: 0 0 10px green;
+            box-shadow: 0 0 10px green; }
+  60% {
+    color: pink;
+    border: 2px solid pink;
+    text-shadow: 0 0 10px red;
+    -webkit-box-shadow: 0 0 10px red;
+            box-shadow: 0 0 10px red; }
+  70% {
+    color: violet;
+    border: 2px solid violet;
+    text-shadow: 0 0 10px orange;
+    -webkit-box-shadow: 0 0 10px orange;
+            box-shadow: 0 0 10px orange; }
+  80% {
+    color: black;
+    border: 2px solid black;
+    text-shadow: 0 0 10px yellow;
+    -webkit-box-shadow: 0 0 10px yellow;
+            box-shadow: 0 0 10px yellow; }
+  90% {
+    color: green;
+    border: 2px solid green;
+    text-shadow: 0 0 10px green;
+    -webkit-box-shadow: 0 0 10px green;
+            box-shadow: 0 0 10px green; }
+  100% {
+    color: red;
+    border: 2px solid red;
+    text-shadow: 0 0 10px blue;
+    -webkit-box-shadow: 0 0 10px blue;
+            box-shadow: 0 0 10px blue; } }
+
+@keyframes crazy2 {
+  0% {
+    color: red;
+    border: 2px solid red;
+    text-shadow: 0 0 10px blue;
+    -webkit-box-shadow: 0 0 10px blue;
+            box-shadow: 0 0 10px blue; }
+  10% {
+    color: orange;
+    border: 2px solid orange;
+    text-shadow: 0 0 10px cyan;
+    -webkit-box-shadow: 0 0 10px cyan;
+            box-shadow: 0 0 10px cyan; }
+  20% {
+    color: yellow;
+    border: 2px solid yellow;
+    text-shadow: 0 0 10px pink;
+    -webkit-box-shadow: 0 0 10px pink;
+            box-shadow: 0 0 10px pink; }
+  30% {
+    color: green;
+    border: 2px solid green;
+    text-shadow: 0 0 10px violet;
+    -webkit-box-shadow: 0 0 10px violet;
+            box-shadow: 0 0 10px violet; }
+  40% {
+    color: blue;
+    border: 2px solid blue;
+    text-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black; }
+  50% {
+    color: cyan;
+    border: 2px solid cyan;
+    text-shadow: 0 0 10px green;
+    -webkit-box-shadow: 0 0 10px green;
+            box-shadow: 0 0 10px green; }
+  60% {
+    color: pink;
+    border: 2px solid pink;
+    text-shadow: 0 0 10px red;
+    -webkit-box-shadow: 0 0 10px red;
+            box-shadow: 0 0 10px red; }
+  70% {
+    color: violet;
+    border: 2px solid violet;
+    text-shadow: 0 0 10px orange;
+    -webkit-box-shadow: 0 0 10px orange;
+            box-shadow: 0 0 10px orange; }
+  80% {
+    color: black;
+    border: 2px solid black;
+    text-shadow: 0 0 10px yellow;
+    -webkit-box-shadow: 0 0 10px yellow;
+            box-shadow: 0 0 10px yellow; }
+  90% {
+    color: green;
+    border: 2px solid green;
+    text-shadow: 0 0 10px green;
+    -webkit-box-shadow: 0 0 10px green;
+            box-shadow: 0 0 10px green; }
+  100% {
+    color: red;
+    border: 2px solid red;
+    text-shadow: 0 0 10px blue;
+    -webkit-box-shadow: 0 0 10px blue;
+            box-shadow: 0 0 10px blue; } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #fff; }
+  100% {
+    background: transparent; } }
+
+@keyframes flash {
+  0% {
+    background: #fff; }
+  100% {
+    background: transparent; } }
+
+.pepetheme {
+  background: url("../animated/pepetheme.gif");
+  background-position-x: center;
+  -webkit-background-size: contain;
+          background-size: contain; }
+  .pepetheme:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-animation: flash .3s;
+            animation: flash .3s; }
+  .pepetheme:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); }
+  .pepetheme .home-box .home-box-site_name h2 {
+    -webkit-animation: crazy1 2s linear infinite;
+            animation: crazy1 2s linear infinite; }
+  .pepetheme .home-box .home-box-variation h2 {
+    -webkit-animation: crazy1 2s linear infinite;
+            animation: crazy1 2s linear infinite; }
+  .pepetheme .home-box .home-box-boxes a {
+    position: relative;
+    -webkit-animation: crazy2 2s linear infinite;
+            animation: crazy2 2s linear infinite;
+    z-index: 2; }
